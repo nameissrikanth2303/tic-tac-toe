@@ -17,3 +17,7 @@ body {
   font-size: 35px;
   color: #000000;
 }
+
+.button {
+  width: 100%;
+}

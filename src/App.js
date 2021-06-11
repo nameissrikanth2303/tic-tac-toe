@@ -20,63 +20,61 @@ const App = () => {
   };
 
   const CheckIsWinner = () => {
-if (
-    itemArray[0] !== "empty" &&
-    itemArray [0] ==itemArray[1] &&
-    itemArray [0] ==itemArray[2]
-
-
-){
-setWinMessage(`${itemArray[0]} Wins`)
-}else if (
-itemArray[0] !== "empty" &&
-itemArray [0] ==itemArray[3] &&
-itemArray [0] ==itemArray[6]) {
-  setWinMessage(`${itemArray[0]} Wins`)
-
-}else if (
-  itemArray[0] !== "empty" &&
- itemArray [0] ==itemArray[4] &&
- itemArray [0] ==itemArray[8]) {
-  setWinMessage(`${itemArray[0]} Wins`)
-
-}else if (
-itemArray[1] !== "empty" &&
- itemArray [1] ==itemArray[4] &&
- itemArray [1] ==itemArray[7]) {
-  setWinMessage(`${itemArray[1]} Wins`)
-
-}else if (
-  itemArray[2] !== "empty" &&
-   itemArray [2] ==itemArray[4] &&
-   itemArray [2] ==itemArray[6]) {
-    setWinMessage(`${itemArray[2]} Wins`)
-  
-  }else if (
-    itemArray[2] !== "empty" &&
-     itemArray [2] ==itemArray[5] &&
-     itemArray [2] ==itemArray[8]) {
-      setWinMessage(`${itemArray[2]} Wins`)
-    
-    }else if (
+    if (
+      itemArray[0] !== "empty" &&
+      itemArray[0] == itemArray[1] &&
+      itemArray[0] == itemArray[2]
+    ) {
+      setWinMessage(`${itemArray[0]} Wins`);
+    } else if (
+      itemArray[0] !== "empty" &&
+      itemArray[0] == itemArray[3] &&
+      itemArray[0] == itemArray[6]
+    ) {
+      setWinMessage(`${itemArray[0]} Wins`);
+    } else if (
+      itemArray[0] !== "empty" &&
+      itemArray[0] == itemArray[4] &&
+      itemArray[0] == itemArray[8]
+    ) {
+      setWinMessage(`${itemArray[0]} Wins`);
+    } else if (
+      itemArray[1] !== "empty" &&
+      itemArray[1] == itemArray[4] &&
+      itemArray[1] == itemArray[7]
+    ) {
+      setWinMessage(`${itemArray[1]} Wins`);
+    } else if (
+      itemArray[2] !== "empty" &&
+      itemArray[2] == itemArray[4] &&
+      itemArray[2] == itemArray[6]
+    ) {
+      setWinMessage(`${itemArray[2]} Wins`);
+    } else if (
+      itemArray[2] !== "empty" &&
+      itemArray[2] == itemArray[5] &&
+      itemArray[2] == itemArray[8]
+    ) {
+      setWinMessage(`${itemArray[2]} Wins`);
+    } else if (
       itemArray[3] !== "empty" &&
-       itemArray [3] ==itemArray[4] &&
-       itemArray [3] ==itemArray[5]) {
-        setWinMessage(`${itemArray[3]} Wins`)
-      
-      }else if (
-        itemArray[6] !== "empty" &&
-         itemArray [6] ==itemArray[4] &&
-         itemArray [6] ==itemArray[2]) {
-          setWinMessage(`${itemArray[6]} Wins`)
-        
-        }else if (
-          itemArray[6] !== "empty" &&
-           itemArray [6] ==itemArray[7] &&
-           itemArray [6] ==itemArray[8]) {
-            setWinMessage(`${itemArray[6]} Wins`)
-          
-          }
+      itemArray[3] == itemArray[4] &&
+      itemArray[3] == itemArray[5]
+    ) {
+      setWinMessage(`${itemArray[3]} Wins`);
+    } else if (
+      itemArray[6] !== "empty" &&
+      itemArray[6] == itemArray[4] &&
+      itemArray[6] == itemArray[2]
+    ) {
+      setWinMessage(`${itemArray[6]} Wins`);
+    } else if (
+      itemArray[6] !== "empty" &&
+      itemArray[6] == itemArray[7] &&
+      itemArray[6] == itemArray[8]
+    ) {
+      setWinMessage(`${itemArray[6]} Wins`);
+    }
   };
 
   const changeItem = (itemNumber) => {
@@ -104,7 +102,7 @@ itemArray[1] !== "empty" &&
                 {winMessage}
               </h1>
 
-              <Button color="success" block onClick={reload}>
+              <Button color="success" block onClick={reload} className="button">
                 Reload
               </Button>
             </div>
